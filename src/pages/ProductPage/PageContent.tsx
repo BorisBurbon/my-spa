@@ -2,6 +2,7 @@ import React from 'react';
 import { CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
+import { ROUTES } from '../../router/routePaths';
 import { useNavigate } from 'react-router-dom';
 import { ProductItem } from '../../api/api.types';
 
@@ -20,7 +21,7 @@ export const PageContent: React.FC<PageContentProps> = ({ product }) => {
 
   return (
 	<Box display="flex" flexDirection="column" alignItems="flex-start">
-		<Button variant="contained" color="primary" onClick={() => history('/')}>
+		<Button variant="contained" color="primary" onClick={() => history(ROUTES.HOME)}>
 			<ArrowBackIcon />
 			<Typography paddingX={2}>Back</Typography>
 		</Button>

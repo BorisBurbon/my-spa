@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-# My SPA
+[My SPA](https://borisburbon.github.io/my-spa/) - Click here to visit the live site
 
 This project is a minimal setup template for React applications using TypeScript and Vite. It includes essential dependencies and configurations to get you started quickly.
 

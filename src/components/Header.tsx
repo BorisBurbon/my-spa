@@ -3,7 +3,7 @@ import { SubmitHandler } from "react-hook-form";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
 import { AuthContext } from '../context/AuthContext';
-
+import { ROUTES } from '../router/routePaths';
 import { SignInForm } from './signInForm';
 import { CustomModal } from './CustomModal';
 
@@ -47,8 +47,8 @@ const Header: React.FC = () => {
 						<Typography variant="h6">
 							{ authenticated ? ` Hi ${userName}` : 'Application' }
 						</Typography>
-                        {location.pathname !== '/' && (
-                            <Button color="inherit" sx={{ marginLeft: 3 }} onClick={() => navigate('/')}>
+                        {location.pathname !== ROUTES.HOME && (
+                            <Button color="inherit" sx={{ marginLeft: 3 }} onClick={() => navigate(ROUTES.HOME)}>
                                 Home
                             </Button>
                         )}

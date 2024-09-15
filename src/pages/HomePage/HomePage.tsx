@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+import { ROUTES } from '../../router/routePaths';
 import { LoadingTableSkeleton } from '../../components/LoadingTableSkeleton';
 import { ProductItem } from '../../api/api.types';
 import { useAPIFetchProducts } from '../../api';
@@ -29,7 +30,7 @@ export const HomePage: React.FC = () => {
   };
 
   const handleTitleClick = (id: number) => {
-    navigate(`/${id}`);
+    navigate(`${ROUTES.HOME}${id}`);
   };
 
   const paginatedData = filteredData?.slice(

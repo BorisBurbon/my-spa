@@ -68,14 +68,14 @@ const ProductTable: React.FC<ProductTableProps> = ({
 				<TableRow key={item.id}>
 				<TableCell>{item.id}</TableCell>
 				<TableCell>
-                    <Typography
-                        variant="body1"
-                        color={authenticated ? "primary" : "textPrimary"}
-                        onClick={authenticated ? () => handleTitleClick(item.id) : undefined}
-                        style={{ cursor: authenticated ? 'pointer' : 'default' }}
-                    >
-                        {item.title}
-                    </Typography>
+					<Typography
+							variant="body1"
+							color={authenticated ? "primary" : "textPrimary"}
+							onClick={authenticated ? () => handleTitleClick(item.id) : undefined}
+							style={{ cursor: authenticated ? 'pointer' : 'default' }}
+					>
+							{item.title}
+					</Typography>
 				</TableCell>
 				<TableCell>{item.price}</TableCell>
 				<TableCell>
